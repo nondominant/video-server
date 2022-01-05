@@ -34,4 +34,32 @@ router.get('/video', function(req, res) {
   }
 });
 
+
+router.get('/metadata', function(req, res) {
+//    res.setHeader("Access-Control-Allow-Origin", "*")
+//    const head = {
+//      'Content-Type': 'application/json',
+//      'Access-Control-Allow-Origin' : '*'
+//    }
+//    res.writeHead(200, head)
+    res.json({ 
+      symbol: "&",
+      name: "ampersand",
+      image: "link",
+      seller_fee_basis_points: 10,
+      properties: {
+        creators: [
+          { 
+            address: '2325jgjdfhgf84y87yfwefh84f8g7wfg4whitgw',
+            share: 50
+          },
+          { 
+            address: '2325jgjdfhgf84y87yfwefh84f8g7wfg4whitgw',
+            share: 50
+          }
+        ]
+      }
+    })
+});
+
 module.exports = router;
