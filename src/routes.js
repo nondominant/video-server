@@ -43,19 +43,25 @@ router.get('/metadata', function(req, res) {
 //    }
 //    res.writeHead(200, head)
     res.json({ 
-      symbol: "&",
-      name: "ampersand",
-      image: "link",
-      seller_fee_basis_points: 10,
-      properties: {
-        creators: [
+      "symbol": "&",
+      "name": "ampersand",
+      "image": "https://apcnft.s3.amazonaws.com/0.png",
+      "seller_fee_basis_points": 10,
+      "properties": {
+        "files": [
+          {
+            "uri": "https://apcnft.s3.amazonaws.com/0.png",
+            "type": "image/png"
+          }
+        ],
+        "creators": [
           { 
-            address: '2325jgjdfhgf84y87yfwefh84f8g7wfg4whitgw',
-            share: 50
+            "address": '4wD9rrEGHhLfdaPHYPoGxp5gtSi99nq4AUnFjaF5eXpz',
+            "share": 50
           },
           { 
-            address: '2325jgjdfhgf84y87yfwefh84f8g7wfg4whitgw',
-            share: 50
+            "address": '4kmhSQfTSBCMe45qk2DAjn5zJ1naSZU5yA2qESwek2mh',
+            "share": 50
           }
         ]
       }
